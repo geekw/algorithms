@@ -1,7 +1,7 @@
-from arrayqueue import Queue
+from llistqueue import Queue
 
 mydata = [7, 13, 45, 19, 28, -1]
-myqueue = Queue(20)
+myqueue = Queue()
 assert myqueue.isEmpty(), "A newly created queue should be empty!"
 assert myqueue.length() == 0, "The length of an empty queue shoul be 0!"
 
