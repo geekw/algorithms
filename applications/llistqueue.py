@@ -11,7 +11,7 @@ class Queue :
         return self._qhead is None
 
     # Returns the number of items in the queue.
-    def length( self ):
+    def __len__( self ):
         return self._count
 
     # Adds the given item to the queue.

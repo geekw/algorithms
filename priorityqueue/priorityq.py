@@ -1,5 +1,5 @@
 # Implementation of the unbounded Priority Queue ADT using a Python list
-# with new items appended to the end.
+# with new items placed at the right place, thus deque() operation would be easy.
 class PriorityQueue :
     # Create an empty unbounded priority queue.
     def __init__( self ):
