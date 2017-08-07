@@ -2,9 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>The Game of Life</title>
 </head>
 <body>
+<h3>Introduction to the Game of Life</h3>
+    <p>The game uses an infinite-sized rectangular grid of cells in which each cell is either
+empty or occupied by an organism. The occupied cells are said to be alive, whereas
+the empty ones are dead. The game is played over a specific period of time with each
+turn creating a new generation based on the arrangement of live organisms in
+the current conguration. The status of a cell in the next generation is determined
+by applying the following four basic rules to each cell in the current conguration:</p>
+
+<ol>
+    <li>If a cell is alive and has either two or three live neighbors, the cell remains
+alive in the next generation. The neighbors are the eight cells immediately
+surrounding a cell: vertically, horizontally, and diagonally.    </li>
+    <li>A living cell that has no live neighbors or a single live neighbor dies from
+isolation in the next generation.    </li>
+    <li>A living cell that has four or more live neighbors dies from overpopulation in
+the next generation.    </li>
+    <li>A dead cell with exactly three live neighbors results in a birth and becomes
+alive in the next generation. All other dead cells remain dead in the next
+generation.    </li>
+</ol>
+
+<h3>Life Grid ADT</h3>
+<p>
+A life grid is used to represent and store the area in the game of Life that contains
+organisms. The grid contains a rectangular grouping of cells of a nite size divided
+into rows and columns. The individual cells, which can be alive or dead, are
+referenced by row and column indices, both of which start at zero.
+</p>
+<ul>
+    <li> <i>LifeGrid </i>( nrows, ncols ): Creates a new game grid consisting of nrows and
+ncols. All cells in the grid are set to dead. </li>
+    <li> <i>numRows </i>(): Returns the number rows in the grid. </li>
+    <li> <i>numCols </i>(): Returns the number of columns in the grid. </li>
+    <li> <i>configure </i>( coordList ): Congures the grid for evolving the next genera-
+tion. The coordList argument is a sequence of 2-tuples with each tuple
+representing the coordinates (r; c) of the cells to be set as alive. All remaining
+cells are cleared or set to dead. </li>
+    <li> <i>clearCell </i>( row, col ): Clears the individual cell (row, col) and sets it to
+dead. The cell indices must be within the valid range of the grid. </li>
+    <li> <i>setCell </i>( row, col ): Sets the indicated cell (row, col) to be alive. The cell
+indices must be within the valid range of the grid. </li>
+    <li> <i>isLiveCell </i>( row,col ): Returns a boolean value indicating if the given cell
+(row, col) contains a live organism. The cell indices must be within the valid
+range of the grid. </li>
+    <li> <i>numLiveNeighbors </i>( row, col ): Returns the number of live neighbors for the
+given cell (row, col). The neighbors of a cell include all of the cells immediately
+surrounding it in all directions. For the cells along the border of the grid, the
+neighbors that fall outside the grid are assumed to be dead. The cell indices
+must be within the valid range of the grid. </li>
+</ul>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
