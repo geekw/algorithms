@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Matrix ADT</title>
+</head>
+<body>
+<p>A matrix is a collection of scalar values arranged in rows and columns as a rectan-
+gular grid of a xed size. The elements of the matrix can be accessed by specifying
+a given row and column index with indices starting at 0.</p>
+    <ul>
+        <li> <i>Matrix </i> ( rows, ncols ): Creates a new matrix containing nrows and ncols
+with each element initialized to 0. </li>
+        <li> <i>numRows </i>(): Returns the number of rows in the matrix. </li>
+        <li> <i>numCols </i>(): Returns the number of columns in the matrix. </li>
+        <li> <i>getitem </i>( row, col ): Returns the value stored in the given matrix element.
+Both row and col must be within the valid range.</li>
+        <li> <i>setitem </i> ( row, col, scalar ): Sets the matrix element at the given row and
+col to scalar. The element indices must be within the valid range. </li>
+        <li> <i>scaleBy </i>( scalar ): Multiplies each element of the matrix by the given scalar
+value. The matrix is modied by this operation. </li>
+        <li> <i>transpose </i>(): Returns a new matrix that is the transpose of this matrix.  </li>
+        <li> <i>add </i>( rhsMatrix ): Creates and returns a new matrix that is the result of
+adding this matrix to the given rhsMatrix. The size of the two matrices must
+be the same.  </li>
+        <li> <i>subtract </i>( rhsMatrix ): The same as the add() operation but subtracts the
+two matrices.  </li>
+        <li> <i>multiply </i>( rhsMatrix ): Creates and returns a new matrix that is the result
+of multiplying this matrix to the given rhsMatrix. The two matrices must be
+of appropriate sizes as dened for matrix multiplication.  </li>
+    </ul>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
