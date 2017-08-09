@@ -8,9 +8,11 @@ def main():
     if maze.findPath():
         print("Path found....")
         maze.draw()
+        path = maze.path()
+        for item in path:
+            print item.row, item.col
     else:
         print("Path not found....")
-        maze.draw()
 
 
 # Builds a maze based on a text format in the given file.

@@ -10,7 +10,7 @@ class Stack:
         return self._size == 0
 
     # Returns the number of items in the stack.
-    def length(self):
+    def __len__(self):
         return self._size
 
     # Returns the top item on the stack without removing it.
@@ -31,10 +31,28 @@ class Stack:
         self._top = _StackNode(item, self._top)
         self._size += 1
 
-        # The private storage class for creating stack nodes.
+    # Returns an iterator for traversing the stack of items.
+    def __iter__(self):
+        return _StackIterator(self)
 
 
+# The private storage class for creating stack nodes.
 class _StackNode:
     def __init__(self, item, link):
         self.item = item
         self.next = link
+
+class _StackIterator:
+    def __init__(self, theStack):
+        self._curItem = theStack._top
+
+    def __iter__(self):
+        return self
+
+    def next(self):
+        if self._curItem is not None:
+            item = self._curItem.item
+            self._curItem = self._curItem.next
+            return item
+        else:
+            raise StopIteration
