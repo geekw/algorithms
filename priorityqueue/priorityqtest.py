@@ -1,12 +1,12 @@
 from priorityq import PriorityQueue
 
 Q = PriorityQueue()
-Q.enqueue( "purple", 5 )
-Q.enqueue( "black", 1 )
-Q.enqueue( "orange", 3 )
-Q.enqueue( "white", 0 )
-Q.enqueue( "green", 1 )
-Q.enqueue( "yellow", 5 )
+Q.enqueue("purple", 5)
+Q.enqueue("black", 1)
+Q.enqueue("orange", 3)
+Q.enqueue("white", 0)
+Q.enqueue("green", 1)
+Q.enqueue("yellow", 5)
 
 assert Q.dequeue() is "white"
 assert Q.dequeue() is "black"

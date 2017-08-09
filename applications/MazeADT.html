@@ -2,9 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Maze ADT</title>
 </head>
 <body>
+<p>
+    A maze is a two-dimensional structure divided into rows and columns of equal-sized
+cells. The individual cells can be filled representing a wall or empty representing
+an open space. One cell is marked as the starting position and another as the exit.
+</p>
+
+<ul>
+    <li> <i>Maze </i>( numRows, numCols ): Creates a new maze with all of the cells initialized
+as open cells. The starting and exit positions are undened. </li>
+    <li> <i>numRows </i>(): Returns the number of rows in the maze. </li>
+    <li> <i>numCols </i>(): Returns the number of columns in the maze. </li>
+    <li> <i>setWall </i>( row, col ): Fills the indicated cell (row, col) with a wall. The cell
+indices must be within the valid range of rows and columns. </li>
+    <li> <i>setStart </i>( row, col ): Sets the indicated cell (row, col) as the starting posi-
+tion. The cell indices must be within the valid range. </li>
+    <li> <i>setExit </i>( row, col ): Sets the indicated cell (row, col) as the exit position.
+The cell indices must be within the valid range. </li>
+    <li> <i>findPath </i>(): Attempts to the solve the maze by nding a path from the starting
+position to the exit. If a solution is found, the path is marked with tokens (x)
+and True is returned. For a maze with no solution, False is returned and the
+maze is left in its original state. The maze must contain both the starting and
+exit position. Cells on the perimeter of the maze can be open and it can be
+assumed there is an invisible wall surrounding the entire maze. </li>
+    <li> <i>reset </i>(): Resets the maze to its original state by removing any tokens placed
+during the nd path operation. </li>
+    <li> <i>draw </i>(): Prints the maze in a readable format using characters to represent the
+walls and path through the maze, if a path has been found. Both the starting
+and exit positions are also indicated, if previously set. </li>
+</ul>
 
 </body>
 </html>

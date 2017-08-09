@@ -1,6 +1,7 @@
 # Implements the LifeGrid ADT for use with the game of Life.
 from matrix import Matrix
 
+
 class LifeGrid:
     # Define constants to represent the cell states.
     DEAD_CELL = 0
@@ -19,18 +20,18 @@ class LifeGrid:
         return self._grid.numCols()
 
     # Configures the grid to contain the given live cells.
-    def configure( self, coordList ):
+    def configure(self, coordList):
         # Clear the game grid.
-        for i in range( self.numCols() ):
-            for j in range( self.numCols() ):
-                self.clearCell( i, j )
+        for i in range(self.numCols()):
+            for j in range(self.numCols()):
+                self.clearCell(i, j)
 
         # Set the indicated cells to be alive.
         for coord in coordList:
             self.setCell(coord[0], coord[1])
 
     # Does the indicated cell contain a live organism?
-    def isLiveCell( self, row, col ):
+    def isLiveCell(self, row, col):
         return self._grid[row, col] == LifeGrid.LIVE_CELL
 
     # Clears the indicated cell by setting it to dead.
@@ -43,13 +44,13 @@ class LifeGrid:
 
     # Returns the number of live neighbors of the given cell.
     def numLiveNeighbors(self, row, col):
-        rowStart = max( 0, row - 1 )
-        rowEnd = min( row+1, self.numRows()-1 )
-        colStart = max( 0, col - 1)
-        colEnd = min( col+1, self.numCols()-1 )
+        rowStart = max(0, row - 1)
+        rowEnd = min(row + 1, self.numRows() - 1)
+        colStart = max(0, col - 1)
+        colEnd = min(col + 1, self.numCols() - 1)
         numLiveNeighbors = 0
-        for i in range( rowStart, rowEnd+1 ):
-            for j in range(colStart, colEnd+1):
+        for i in range(rowStart, rowEnd + 1):
+            for j in range(colStart, colEnd + 1):
                 if self.isLiveCell(i, j):
                     numLiveNeighbors += 1
 
