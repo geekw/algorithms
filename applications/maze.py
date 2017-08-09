@@ -60,66 +60,45 @@ class Maze:
     def findPath(self):
         currentCell = self._startCell
         while True:
-            # Try Up
-            if self._validMove(currentCell.row-1, currentCell.col):
-                if self._exitFound(currentCell.row-1, currentCell.col):
-                    self._markPath(currentCell.row, currentCell.col)
-                    self._path.push(currentCell)
-                    self._markPath(self._exitCell.row, self._exitCell.col)
-                    self._path.push(self._exitCell)
-                    return True
+            if self._exitFound(currentCell.row, currentCell.col):
                 self._markPath(currentCell.row, currentCell.col)
                 self._path.push(currentCell)
-                currentCell = _CellPosition(currentCell.row-1, currentCell.col)
-                continue
-
-            # Try Down
-            elif self._validMove(currentCell.row+1, currentCell.col):
-                if self._exitFound(currentCell.row+1, currentCell.col):
-                    self._markPath(currentCell.row, currentCell.col)
-                    self._path.push(currentCell)
-                    self._markPath(self._exitCell.row, self._exitCell.col)
-                    self._path.push(self._exitCell)
-                    return True
-                self._markPath(currentCell.row, currentCell.col)
-                self._path.push(currentCell)
-                currentCell = _CellPosition(currentCell.row+1, currentCell.col)
-                continue
-
-            # Try Left
-            elif self._validMove(currentCell.row, currentCell.col-1):
-                if self._exitFound(currentCell.row, currentCell.col-1):
-                    self._markPath(currentCell.row, currentCell.col)
-                    self._path.push(currentCell)
-                    self._markPath(self._exitCell.row, self._exitCell.col)
-                    self._path.push(self._exitCell)
-                    return True
-                self._markPath(currentCell.row, currentCell.col)
-                self._path.push(currentCell)
-                currentCell = _CellPosition(currentCell.row, currentCell.col-1)
-                continue
-
-            # Try Right
-            elif self._validMove(currentCell.row, currentCell.col+1):
-                if self._exitFound(currentCell.row, currentCell.col+1):
-                    self._markPath(currentCell.row, currentCell.col)
-                    self._path.push(currentCell)
-                    self._markPath(self._exitCell.row, self._exitCell.col)
-                    self._path.push(self._exitCell)
-                    return True
-                self._markPath(currentCell.row, currentCell.col)
-                self._path.push(currentCell)
-                currentCell = _CellPosition(currentCell.row, currentCell.col+1)
-                continue
-
-            # Dead End
+                return True
             else:
-                if currentCell == self._startCell:
-                    return False
-                self._markTried(currentCell.row, currentCell.col)
-                currentCell = self._path.pop()
-                continue
+                nextMove = self._nextMove(currentCell.row, currentCell.col)
+                # Current cell is a dead end.
+                if nextMove is None:
+                    # No backtracking. Failed to find a path
+                    if self._path.isEmpty():
+                        return False
+                    # Backtracking
+                    else:
+                        self._markTried(currentCell.row, currentCell.col)
+                        currentCell = self._path.pop()
+                # Has valid moves to go
+                else:
+                    self._markPath(currentCell.row, currentCell.col)
+                    self._path.push(currentCell)
+                    currentCell = nextMove
 
+
+    # Seeks next move
+    def _nextMove(self, row, col):
+        # Up
+        if self._validMove(row-1, col):
+            return _CellPosition(row-1, col)
+        # Down
+        elif self._validMove(row+1, col):
+            return _CellPosition(row+1, col)
+        # Left
+        elif self._validMove(row, col-1):
+            return _CellPosition(row, col-1)
+        # Right
+        elif self._validMove(row, col+1):
+            return _CellPosition(row, col+1)
+        # Dead end
+        else:
+            return None
 
     # Resets the maze by removing all "path" and "tried" tokens.
     def reset(self):
