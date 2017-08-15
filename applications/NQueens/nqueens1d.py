@@ -1,5 +1,5 @@
 # Implmentation of a 1-D array
-from listbag import Bag
+from applications.listbag import Bag
 
 class QueensBoard:
     def __init__(self, size):
