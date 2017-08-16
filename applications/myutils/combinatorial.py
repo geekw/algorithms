@@ -23,4 +23,3 @@ class Permutation:
                     rsolution.insert(0, head)
                 solutions.extend(rsolutions)
             return solutions
-

@@ -15,7 +15,7 @@ def isValidPositions(permutation):
 
     return True
 
-board_size = 8
+board_size = 10
 elements = range(board_size)
 perms = permutations(elements)
 
