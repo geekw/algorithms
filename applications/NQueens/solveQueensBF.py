@@ -1,6 +1,6 @@
 # Solves the N-Queens problem with brute force
 
-from combinatorial import Permutation
+from itertools import permutations
 
 # For the N-Queens problem, if a set of queens' position
 # is represented using a 1-D array of permutation, there is
@@ -15,9 +15,9 @@ def isValidPositions(permutation):
 
     return True
 
-board_size = 10
+board_size = 8
 elements = range(board_size)
-perms = Permutation(elements).solutions()
+perms = permutations(elements)
 
 validSolutions = list()
 for perm in perms:
