@@ -8,6 +8,6 @@ def permumine(theList):
     perms = Permutation(theList)
     return perms.solutions()
 
-mylist = [i for i in range(10)]
+mylist = [i for i in range(3)]
 perms1 = permustd(mylist)
 perms2 = permumine(mylist)

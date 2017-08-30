@@ -10,7 +10,9 @@ class Permutation:
     def solutions(self):
         return self._permute(self._list)
 
+    # This implementation is extremely inefficient!!!
     def _permute(self, elements):
+        print elements
         if len(elements) == 1:
             return [elements]
         else:
