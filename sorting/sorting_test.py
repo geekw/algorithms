@@ -1,6 +1,9 @@
-from sorting import Sorting
+from sorting import Sorting, quick_sort
+import random
 
-items = [2, 3, 9, 7, 5, 6]
-sorting_items = Sorting(items)
-for item in sorting_items.insertion_sort():
+
+seq = [item for item in range(100)]
+random.shuffle(seq)
+quick_sort(seq)
+for item in seq:
     print item
