@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15f187fe-3746-481d-961b-22957b34b2a6" name="Default" comment="Added the pdf tutorial">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/expressiontree/Expression Tree ADT.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/expressiontree/expressiontree.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/expressiontree/expressiontreetest.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/expressiontree/pylistqueue.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/map/MapADT.html" afterPath="$PROJECT_DIR$/map/MapADT.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/heap/heap.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/heap/maxheaptest.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="algorithms.iws" />
@@ -34,6 +31,7 @@
     <SUITE FILE_PATH="coverage/algorithms$knapsacktest__1_.coverage" NAME="knapsacktest (1) Coverage Results" MODIFIED="1502874862740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/applications/Knapsack" />
     <SUITE FILE_PATH="coverage/algorithms$permute.coverage" NAME="permute Coverage Results" MODIFIED="1502769281424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/applications" />
     <SUITE FILE_PATH="coverage/algorithms$driver.coverage" NAME="driver Coverage Results" MODIFIED="1501836365861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/applications" />
+    <SUITE FILE_PATH="coverage/algorithms$maxheaptest.coverage" NAME="maxheaptest Coverage Results" MODIFIED="1504757468972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/heap" />
     <SUITE FILE_PATH="coverage/algorithms$combinatorial.coverage" NAME="combinatorial Coverage Results" MODIFIED="1502876785183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/applications/myutils" />
     <SUITE FILE_PATH="coverage/algorithms$bagtest.coverage" NAME="bagtest Coverage Results" MODIFIED="1501841466593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bag" />
     <SUITE FILE_PATH="coverage/algorithms$linearmap.coverage" NAME="linearmap Coverage Results" MODIFIED="1504077564925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/map" />
@@ -48,7 +46,7 @@
     <SUITE FILE_PATH="coverage/algorithms$sorting_test.coverage" NAME="sorting_test Coverage Results" MODIFIED="1504511041243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sorting" />
     <SUITE FILE_PATH="coverage/algorithms$solveQueensBF.coverage" NAME="solveQueensBF Coverage Results" MODIFIED="1502869572773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/applications" />
     <SUITE FILE_PATH="coverage/algorithms$matrixtest.coverage" NAME="matrixtest Coverage Results" MODIFIED="1502085135911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/matrix" />
-    <SUITE FILE_PATH="coverage/algorithms$expressiontreetest.coverage" NAME="expressiontreetest Coverage Results" MODIFIED="1504686170138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/expressiontree" />
+    <SUITE FILE_PATH="coverage/algorithms$expressiontreetest.coverage" NAME="expressiontreetest Coverage Results" MODIFIED="1504686234950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/expressiontree" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -59,84 +57,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="sorting.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sorting/sorting.py">
+      <file leaf-file-name="maxheaptest.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/heap/maxheaptest.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="68" column="42" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
+              <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Expression Tree ADT.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/expressiontree/Expression Tree ADT.html">
+      <file leaf-file-name="heap.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/heap/heap.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.125">
-              <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.065743946">
+              <caret line="33" column="57" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="expressiontreetest.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/expressiontree/expressiontreetest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.15570934">
-              <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="expressiontree.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/expressiontree/expressiontree.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="52" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pylistqueue.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/queue/pylistqueue.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pylistqueue.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/expressiontree/pylistqueue.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MapADT.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/map/MapADT.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.125">
-              <caret line="31" column="5" selection-start-line="7" selection-start-column="0" selection-end-line="31" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sorting_test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sorting/sorting_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -162,8 +98,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/priorityqueue/bpriorityq.py" />
-        <option value="$PROJECT_DIR$/applications/simpeople.py" />
         <option value="$PROJECT_DIR$/applications/llistqueue.py" />
         <option value="$PROJECT_DIR$/applications/simulation.py" />
         <option value="$PROJECT_DIR$/applications/driver.py" />
@@ -213,6 +147,8 @@
         <option value="$PROJECT_DIR$/expressiontree/Expression Tree ADT.html" />
         <option value="$PROJECT_DIR$/expressiontree/expressiontree.py" />
         <option value="$PROJECT_DIR$/expressiontree/expressiontreetest.py" />
+        <option value="$PROJECT_DIR$/heap/maxheaptest.py" />
+        <option value="$PROJECT_DIR$/heap/heap.py" />
       </list>
     </option>
   </component>
@@ -421,35 +357,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="queue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="map" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="expressiontree" />
+              <option name="myItemId" value="heap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -478,7 +386,7 @@
       <recent name="$PROJECT_DIR$/applications/NQueens" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.expressiontreetest">
+  <component name="RunManager" selected="Python.maxheaptest">
     <configuration default="false" name="hashmaptest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -493,24 +401,6 @@
       <module name="algorithms" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/map/hashmaptest.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="linearmap" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/map" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="algorithms" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/map/linearmap.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -565,6 +455,24 @@
       <module name="algorithms" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/expressiontree/expressiontreetest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="maxheaptest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/heap" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="algorithms" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/heap/maxheaptest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -759,18 +667,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.hashmaptest" />
-      <item index="1" class="java.lang.String" itemvalue="Python.linearmap" />
-      <item index="2" class="java.lang.String" itemvalue="Python.sorting_test" />
-      <item index="3" class="java.lang.String" itemvalue="Python.sorting" />
-      <item index="4" class="java.lang.String" itemvalue="Python.expressiontreetest" />
+      <item index="1" class="java.lang.String" itemvalue="Python.sorting_test" />
+      <item index="2" class="java.lang.String" itemvalue="Python.sorting" />
+      <item index="3" class="java.lang.String" itemvalue="Python.expressiontreetest" />
+      <item index="4" class="java.lang.String" itemvalue="Python.maxheaptest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.expressiontreetest" />
-        <item index="1" class="java.lang.String" itemvalue="Python.sorting_test" />
-        <item index="2" class="java.lang.String" itemvalue="Python.sorting" />
-        <item index="3" class="java.lang.String" itemvalue="Python.hashmaptest" />
-        <item index="4" class="java.lang.String" itemvalue="Python.linearmap" />
+        <item index="0" class="java.lang.String" itemvalue="Python.maxheaptest" />
+        <item index="1" class="java.lang.String" itemvalue="Python.expressiontreetest" />
+        <item index="2" class="java.lang.String" itemvalue="Python.sorting_test" />
+        <item index="3" class="java.lang.String" itemvalue="Python.sorting" />
+        <item index="4" class="java.lang.String" itemvalue="Python.hashmaptest" />
       </list>
     </recent_temporary>
   </component>
@@ -838,25 +746,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="59" />
+      <option name="time" value="68" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/applications/simpeople.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/applications/driver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/priorityqueue/PriorityQueueADT.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.47058824">
@@ -1147,10 +1041,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sorting/sorting_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.2542373">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1165,7 +1059,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/map/MapADT.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.125">
+        <state vertical-scroll-proportion="0.8579882">
           <caret line="31" column="5" selection-start-line="7" selection-start-column="0" selection-end-line="31" selection-end-column="5" />
           <folding />
         </state>
@@ -1173,7 +1067,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/queue/pylistqueue.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.56497175">
           <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
           <folding />
         </state>
@@ -1197,7 +1091,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/expressiontree/expressiontree.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.50282484">
           <caret line="29" column="52" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
           <folding />
         </state>
@@ -1205,8 +1099,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/expressiontree/expressiontreetest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15570934">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.16949153">
+          <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heap/maxheaptest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heap/heap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.065743946">
+          <caret line="33" column="57" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
           <folding />
         </state>
       </provider>
