@@ -37,7 +37,7 @@ class MorseCodeTree:
         character_map['G'].left = character_map['Z']
         character_map['G'].right = character_map['Q']
 
-    def translate(self, sequence):
+    def decode(self, sequence):
         assert 0 < len(sequence) <= 4, "Illegal length"
 
         current_node = self._root
@@ -52,6 +52,27 @@ class MorseCodeTree:
 
         return current_node.character
 
+    def encode(self, character):
+        self._rev_path = ""
+        assert character in string.lowercase or character in string.uppercase, "Illegal character!"
+        character = string.upper(character)
+        if self._search(character, self._root):
+            return self._rev_path[::-1]
+        else:
+            return None
+
+    def _search(self, character, current_pos):
+        if current_pos is not None:
+            if current_pos.character == character:
+                return True
+            if self._search(character, current_pos.left):
+                self._rev_path += "."
+                return True
+            if self._search(character, current_pos.right):
+                self._rev_path += "-"
+                return True
+        else:
+            return False
 
 
 class _TreeNode:
