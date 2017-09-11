@@ -110,8 +110,6 @@ class HashMap:
                     else:
                         slot = (slot + step) % M
 
-
-
     # Rebuilds the hash table.
     def _rehash(self):
         # Create a new larger table.

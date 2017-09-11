@@ -4,6 +4,7 @@ import string
 class MorseCodeTree:
     def __init__(self):
         self._build_code_tree()
+        self._rev_path = "" # For encoding
 
     def _build_code_tree(self):
         self._root = _TreeNode()
@@ -53,7 +54,6 @@ class MorseCodeTree:
         return current_node.character
 
     def encode(self, character):
-        self._rev_path = ""
         assert character in string.lowercase or character in string.uppercase, "Illegal character!"
         character = string.upper(character)
         if self._search(character, self._root):
