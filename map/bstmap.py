@@ -81,12 +81,11 @@ class BSTMap:
             elif subtree.left is None and subtree.right is not None: # 0 - 1
                 return subtree.right
             else: # 1-1
-                successor = self._bst_minimum(subtree.right)
+                successor = self._bst_maximum(subtree.left)
                 subtree.key = successor.key
                 subtree.value = successor.value
-                subtree.right = self._bst_remove(subtree.right, successor.key)
+                subtree.left = self._bst_remove(subtree.left, successor.key)
                 return subtree
-
 
     # Helper method for finding the node containing the minimum key.
     def _bst_minimum(self, subtree):
@@ -95,16 +94,16 @@ class BSTMap:
         elif subtree.left is None:
             return subtree
         else:
-            return self._bst_search(subtree.left)
+            return self._bst_minimum(subtree.left)
 
-    # Helper method for finding the node cantaining the maximum key.
+    # Helper method for finding the node containing the maximum key.
     def _bst_maximum(self, subtree):
         if subtree is None:
             return None
         elif subtree.right is None:
             return subtree
         else:
-            return self._bst_search(subtree.right)
+            return self._bst_maximum(subtree.right)
 
 
 # Storage class for the binary search tree nodes of the map
